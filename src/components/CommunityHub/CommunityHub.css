@@ -1,0 +1,22 @@
+.community-hub {
+    padding: var(--spacing-md);
+    background-color: var(--color-search-bg);
+  }
+  
+  .community-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+  }
+  
+  @media (min-width: 768px) {
+    .community-hub {
+      padding: var(--spacing-lg);
+    }
+    
+    .community-title {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-lg);
+    }
+  }
