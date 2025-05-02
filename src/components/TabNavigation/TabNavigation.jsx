@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
 import './TabNavigation.css'
 
 const tabs = ['All', 'Discussion', 'News', 'Posts', 'Query', 'Job']
@@ -10,7 +9,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       {tabs.map(tab => (
         <button
           key={tab}
-          className={classNames('tab', { 'active': activeTab === tab })}
+          className={`tab ${activeTab === tab ? 'active' : ''}`}
           onClick={() => setActiveTab(tab)}
           aria-pressed={activeTab === tab}
         >
